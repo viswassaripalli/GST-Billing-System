@@ -1,0 +1,9 @@
+<?php 
+session_start();
+$_SESSION[loggedin]="false";
+if($_SESSION[loggedin]=="false")
+{
+    header('Location:index.php');
+    session_destroy();
+}
+?>
